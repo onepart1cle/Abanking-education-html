@@ -1,0 +1,373 @@
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    width: 1440px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #1E252B;
+    color: white;
+    padding: 0 0 0 108px;
+    background-image: url('../img/background_images.png');
+    background-repeat: no-repeat;
+    background-position:right 0px top 132px;
+    background-size: 589px 568px;
+}
+
+header{
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-logo__img{
+    width: 38px;
+    height: 38px;
+}
+
+.header-logo__text{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 12px;
+    line-height: 33px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 257px;
+}
+
+.header-nav__element{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 24px;
+    margin-left: 50px;
+}
+
+.header-nav__element-chevron{
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons{
+    margin-left: 193px;
+
+}
+
+.header-buttons__login{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.55);
+    padding: 12px 28px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    box-shadow: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.header-buttons__signup{
+    background-color: rgba(255, 110, 48, 1);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.hero{
+    margin-top: 104px;
+    margin-bottom: 200px;
+
+}
+
+.hero__backimg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 0 0 108px;
+
+}
+
+.hero__h1{
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.orange-dot{
+    color: rgba(255, 110, 48, 1);
+}
+
+.hero__p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.hero__inputdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(40, 48, 54, 1);
+    width: 498px;
+    height: 64px;
+    border-radius: 15px;
+    border: 2px solid;
+    border-image-source: linear-gradient(90.89deg, rgba(255, 255, 255, 0.1) -1.67%, rgba(255, 255, 255, 0) 103.73%);
+}
+
+.hero__inputdiv__searchimg{
+    margin-left: 18px;
+    width: 24px;
+    height: 24px;
+
+}
+
+.hero__inputdiv__input{
+    background-color: rgba(40, 48, 54, 1);
+    border: none;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    width: 400px;
+    height: 21px;
+    margin-left: 10px;
+}
+
+.hero__inputdiv__button{
+    background-color: rgba(255, 110, 48, 1);
+    color: white;
+    border: none;
+    padding: 12px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-right: 11px;
+}
+
+.hero__logos{
+    display: flex;
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.hero__logos__element{
+    width: 34px;
+    height: 34px;
+    padding: 12px;
+    margin-right: 8px;
+}
+
+.tools__h2{
+    font-size: 48px;
+    margin-left: 385px;
+    line-height: 62px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.tools__p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 90px;
+    text-align: center;
+    margin-left: 415px;
+    display: inline-block;
+}
+
+.tools__cards{
+    display: grid;
+    grid-template-columns: 392px 392px 392px;
+    column-gap: 24px;
+    row-gap: 100px;
+}
+
+.tools__cards__card{
+    padding: 33px;
+    width: 326px;
+    position: relative;
+}
+
+.tools__cards__card:hover {
+    transform: translateY(-20px);
+    z-index: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid;
+    backdrop-filter: blur(50px);
+    border-image-source: linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%);
+    border-radius: 15px;
+    background-color: rgba(40, 48, 54, 0.6);
+    background-image: url("../img/Mask Group2.png");
+}
+
+.tools__cards__card:hover .tools__cards__card__inf-name {
+    color: white;
+}
+
+.tools__cards__card:hover .tools__cards__card__inf-price {
+    color: rgba(255, 165, 55, 1);
+}
+
+.tools__cards__card__icon-like{
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools__cards__card__icon-folder{
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools__cards__card:hover .tools__cards__card__icon-like{
+    background: rgba(40, 48, 54, 1);;
+    box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+.tools__cards__card:hover .tools__cards__card__icon-like img{
+    content: url("../img/like_active.svg");
+}
+
+
+.tools__cards__card:hover .tools__cards__card__p {
+    color: rgba(255, 110, 48, 1);
+}
+
+.tools__cards__card--right{
+    padding: 32px;
+    margin-bottom: 100px;
+    margin-right: 0px;
+}
+
+.tools__cards__card__inf{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.tools__cards__card__inf-logo{
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.tools__cards__card__inf-name{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.tools__cards__card__inf-price{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 165, 55, 0.55);
+    margin-bottom: 30px;
+    margin-top: 3px;
+}
+
+.tools__cards__card__descr{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.tools__cards__card__icons{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tools__cards__card__p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+    margin-left: 159px;
+    padding: 0;
+}
+
+.tools__button{
+    color: rgba(255, 110, 48, 1);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 17px 38px;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 520px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+
+footer{
+    border: 2px solid;
+    border-image-source: linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
+    width: 1224px;
+    height: 253px;
+    top: 2209px;
+    left: 108px;
+    border-radius: 25px 0px 0px 0px;
+    backdrop-filter: blur(50px);
+    background-image: url("../img/Mask Group.png");
+    margin-bottom: 48px;
+}
+
+.footer-h2{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding-top: 55px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.footer-ul{
+    display: flex;
+    gap: 107px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

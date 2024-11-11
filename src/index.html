@@ -6,61 +6,165 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <img src="" alt="">
-        <p>antools.</p>
+        <div class = "header-logo">
+            <img class = "header-logo__img" src="img/logo.svg" alt="">
+            <p class = "header-logo__text">antools.</p>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
+            <ul class = "header-nav">
+                <li><a  class = "header-nav__element" href="#">Home</a></li>
+                <li class = "header-nav__element-chevron"><a class = "header-nav__element" href="#">Categories</a> <img src="img/chevron-down.svg" style="width: 18px; height: 18px"></li>
 
-                <li><a href="#">My Collections</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a class = "header-nav__element" href="#">My Collections</a></li>
+                <li><a class = "header-nav__element" href="#">Blog</a></li>
             </ul>
         </nav>
-        <div>
-            <button>Login</button>
-            <button>Sign Up</button>
+        <div class = "header-buttons">
+            <button class = "header-buttons__login">Login</button>
+            <button class = "header-buttons__signup">Sign Up</button>
         </div>
     </header>
-    <div>
-        <h1>Awesome tools for
-            Designer & Developer.</h1>
-        <p>Antool is a web collection of information on paid or free Design and Development tools</p>
-        <div>
-            <input type="text" placeholder="|find more than 430+ tools...">
-            <button>Search</button>
+    <div class = "hero">
+        <h1 class = "hero__h1">Awesome tools for <br>
+            Designer & Developer<span class = "orange-dot">.</span></h1>
+        <p class = "hero__p">Antool is a web collection of information on paid or<br> free Design and Development tools</p>
+        <div class = "hero__inputdiv">
+            <img class = "hero__inputdiv__searchimg" src="img/search_icon.svg">
+            <input class = "hero__inputdiv__input" type="text" placeholder="|find more than 430+ tools...">
+            <button class = "hero__inputdiv__button">Search</button>
         </div>
-        <ul>
-            <li><a href = #><img src="" alt="facebook"> </a></li>
-            <li><a href = #><img src="" alt="facebook"> </a></li>
-            <li><a href = #><img src="" alt="facebook"> </a></li>
+        <ul class = "hero__logos">
+            <li><a class = "hero__logos__element" href = #><img src="img/facebook.svg" alt="facebook"> </a></li>
+            <li><a class = "hero__logos__element" href = #><img src="img/instagram.svg" alt="insta"> </a></li>
+            <li><a class = "hero__logos__element" href = #><img src="img/twitter.svg" alt="X"> </a></li>
         </ul>
     </div>
 
-    <div>
-        <h2>
+    <div class = "tools">
+        <h2 class = "tools__h2">
             Most Popular Tools
         </h2>
-        <p>Tools for the best Designers and Developers
+        <p class = "tools__p">Tools for the best Designers and Developers<br>
             most popularly used in the world</p>
-        <div>
 
+        <div class = "tools__cards">
+            <div class="tools__cards__card">
+                <div class="tools__cards__card__inf">
+                    <img class="tools__cards__card__inf-logo" src="img/figma.svg" alt="figma">
+                    <div>
+                        <h3 class="tools__cards__card__inf-name">FIGMA</h3>
+                        <p class="tools__cards__card__inf-price">Free</p>
+                    </div>
+                </div>
+                <p class="tools__cards__card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tools__cards__card__icons">
+                    <div class="tools__cards__card__icon-like"><img src = "img/like.svg" alt=""></div>
+                    <div class="tools__cards__card__icon-folder"><img src="img/folder.svg" alt=""></div>
+                    <p class="tools__cards__card__p">Visit</p>
+                </div>
+            </div>
+
+            <div class="tools__cards__card">
+                <div class="tools__cards__card__inf">
+                    <img class="tools__cards__card__inf-logo" src="img/logos_sketch.svg" alt="figma">
+                    <div>
+                        <h3 class="tools__cards__card__inf-name">Sketch</h3>
+                        <p class="tools__cards__card__inf-price">Trial & Paid</p>
+                    </div>
+                </div>
+                <p class="tools__cards__card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tools__cards__card__icons">
+                    <div class="tools__cards__card__icon-like"><img src = "img/like.svg" alt=""></div>
+                    <div class="tools__cards__card__icon-folder"><img src="img/folder.svg" alt=""></div>
+                    <p class="tools__cards__card__p">Visit</p>
+                </div>
+            </div>
+
+            <div class="tools__cards__card">
+                <div class="tools__cards__card__inf">
+                    <img class="tools__cards__card__inf-logo" src="img/logos_visual-studio-code.svg" alt="vscode">
+                    <div>
+                        <h3 class="tools__cards__card__inf-name">Visual Studio Code</h3>
+                        <p class="tools__cards__card__inf-price">Free</p>
+                    </div>
+                </div>
+                <p class="tools__cards__card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tools__cards__card__icons">
+                    <div class="tools__cards__card__icon-like"><img src = "img/like.svg" alt=""></div>
+                    <div class="tools__cards__card__icon-folder"><img src="img/folder.svg" alt=""></div>
+                    <p class="tools__cards__card__p">Visit</p>
+                </div>
+            </div>
+
+            <div class="tools__cards__card">
+                <div class="tools__cards__card__inf">
+                    <img class="tools__cards__card__inf-logo" src="img/notion.svg" alt="notion">
+                    <div>
+                        <h3 class="tools__cards__card__inf-name">Notion</h3>
+                        <p class="tools__cards__card__inf-price">Trial & Paid</p>
+                    </div>
+                </div>
+                <p class="tools__cards__card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tools__cards__card__icons">
+                    <div class="tools__cards__card__icon-like"><img src = "img/like.svg" alt=""></div>
+                    <div class="tools__cards__card__icon-folder"><img src="img/folder.svg" alt=""></div>
+                    <p class="tools__cards__card__p">Visit</p>
+                </div>
+            </div>
+
+            <div class="tools__cards__card">
+                <div class="tools__cards__card__inf">
+                    <img class="tools__cards__card__inf-logo" src="img/grommet-icons_slack.svg" alt="slack">
+                    <div>
+                        <h3 class="tools__cards__card__inf-name">Slack</h3>
+                        <p class="tools__cards__card__inf-price">Trial & Paid</p>
+                    </div>
+                </div>
+                <p class="tools__cards__card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tools__cards__card__icons">
+                    <div class="tools__cards__card__icon-like"><img src = "img/like.svg" alt=""></div>
+                    <div class="tools__cards__card__icon-folder"><img src="img/folder.svg" alt=""></div>
+                    <p class="tools__cards__card__p">Visit</p>
+                </div>
+            </div>
+
+            <div class="tools__cards__card">
+                <div class="tools__cards__card__inf">
+                    <img class="tools__cards__card__inf-logo" src="img/logos_invision-icon.svg" alt="invision">
+                    <div>
+                        <h3 class="tools__cards__card__inf-name">Invision</h3>
+                        <p class="tools__cards__card__inf-price">Trial & Paid</p>
+                    </div>
+                </div>
+                <p class="tools__cards__card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tools__cards__card__icons">
+                    <div class="tools__cards__card__icon-like"><img src = "img/like.svg" alt=""></div>
+                    <div class="tools__cards__card__icon-folder"><img src="img/folder.svg" alt=""></div>
+                    <p class="tools__cards__card__p">Visit</p>
+                </div>
+            </div>
         </div>
-        <button>
-            Loda More
+        <button class = "tools__button">
+            Load More
         </button>
+
     </div>
     <footer>
-        <h2>Trusted more than 150+ brand</h2>
-        <ul>
-            <li><a href = #><img src="" alt="facebook"> </a></li>
-            <li><a href = #><img src="" alt="facebook"> </a></li>
-            <li><a href = #><img src="" alt="facebook"> </a></li>
+        <h2 class = "footer-h2">Trusted more than 150+ brand</h2>
+        <ul class = "footer-ul">
+            <li><a href = #><img src="img/logos_microsoft.png" alt="facebook"> </a></li>
+            <li><a href = #><img src="img/logos_google.png" alt="google"> </a></li>
+            <li><a href = #><img src="img/logos_slack.png" alt="slack"> </a></li>
+            <li><a href = #><img src="img/logos_wordpress.png" alt="wordpress"> </a></li>
         </ul>
     </footer>
 </body>
